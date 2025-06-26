@@ -98,3 +98,39 @@
 // console.log(mul(4,3));
 
 
+// function display()
+// {
+//     console.log("Hello User !");
+// }
+
+// display();
+
+// function display(name)
+// {
+//     console.log("Hello "+ name );
+// }
+
+// display("Khush");
+
+// let calculation = function (langname)
+// {
+//     console.log(`Hello from ${langname}`);
+// }
+
+// calculation("JavaScript");
+
+//Arrow Functions here !!
+
+// let calculation = (a ,b) => 
+// {
+//     console.log(`The sum of ${a} and ${b} is ${a+b}`);
+//     return 50;
+    
+// }
+
+// calculation(2,3);
+// console.log(calculation(3,3));
+
+// //One Liner arrow funtion
+// let calculation = (a,b) => console.log(a+b);
+// calculation(4,2)
