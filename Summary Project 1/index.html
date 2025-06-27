@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h2 class="heading">
+                Smart Student Dashboard
+            </h2>
+    
+            <!-- Login Section -->
+             <div class="logcontainer">
+                <h3 class="headings">Login</h3>
+                <input type="text" id="enterdusername" placeholder="Enter Your Username" class="input-area">
+                <input type="text" id="enterdpassword" placeholder="Enter Your Password" class="input-area">
+                <button onclick="show_login()" class="login-btn">Login</button>
+                <p id="login_message"></p>
+             </div>
+
+             <!--Student Profile-->
+             <div class="studprofile">
+                <h3 class="headings">Student Profile</h3>
+                <button onclick="show_profile()" class="profile-btn">Show Profile</button>
+                <p id="display_profile"></p>
+             </div>
+
+             <div class="calculatorcontainer">
+                <div class="headings">Calculator</div>
+                <input type="number" class="input-area" id="inputA">
+                <input type="number" class="input-area" id="inputB">
+                <select name="" id="operator">
+                    <option value="+">Add</option>
+                    <option value="-">Subtract</option>
+                    <option value="*">Multiply</option>
+                    <option value="/">Division</option>
+                </select>
+                <button onclick="result()" class="calculator-btn">Calculate</button>
+                <p  id="resultshow"></p>
+             </div>
+
+             <div class="gradecalculator">
+                <div class="headings">Grade Calculator</div>
+                <input type="number" placeholder="Maths Mark" id="mark1" class="input-area">
+                <input type="number" placeholder="English Mark" id="mark2" class="input-area">
+                <input type="number" placeholder="Science Mark" id="mark3" class="input-area">
+                <button onclick="gradeshow()" class="gradecalculator-btn">Calculate Grade</button>
+                <p id="showgrade"></p>
+             </div>
+
+                <div class="multiplication">
+                    <h2 class="headings">Multiplication Table</h2>
+                    <input type="number" id="number" placeholder="Enter a Number" class="input-area">
+                    <button onclick="MultiplicationCalculation()" class="table-btn">Generate Table</button>
+                    <p id="showtable"></p>
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

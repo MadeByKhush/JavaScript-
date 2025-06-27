@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(127, 255, 212, 0.295);
+}
+
+.container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.headings {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.logcontainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input-area {
+    height: 1.8rem;
+}
+
+.login-btn {
+    height: 1.8rem;
+}
+
+.profile-btn {
+    height: 1.8rem;
+    width: 100%;
+}
+
+.calculatorcontainer {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.calculator-btn {
+    height: 1.8rem;
+    width: 100%;
+}
+
+#operator {
+    height: 1.8rem;
+}
+
+.gradecalculator {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.gradecalculator-btn {
+    height: 1.8rem;
+    width: 100%;
+}
+
+.multiplication {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.table-btn {
+    height: 1.8rem;
+    width: 100%;
+}
