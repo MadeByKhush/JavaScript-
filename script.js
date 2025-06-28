@@ -134,3 +134,24 @@
 // //One Liner arrow funtion
 // let calculation = (a,b) => console.log(a+b);
 // calculation(4,2)
+
+// const student = {
+//     name: 'khush',
+//     age: 20,
+//     course: 'BCA',
+//     hobbies: ["Coding", "Gaming", "Music"]
+// }
+
+// console.log(student.name.age);
+
+// const Arr = [0,1,2,3,4,5,6]
+// console.log(Arr.length);
+
+// let arr = [1, 2, 3, 4, 5];
+// let subArr = arr.slice(1, 4); // [2, 3, 4]
+// console.log(arr); // [1, 2, 3, 4, 5] (original unchanged)
+// console.log(subArr);
+
+let arr = ["a", "b", "c", "d"];
+arr.splice(2, 1, "x", "y");
+console.log(arr);
