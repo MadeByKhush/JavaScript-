@@ -152,6 +152,10 @@
 // console.log(arr); // [1, 2, 3, 4, 5] (original unchanged)
 // console.log(subArr);
 
-let arr = ["a", "b", "c", "d"];
-arr.splice(2, 1, "x", "y");
-console.log(arr);
+// let arr = ["a", "b", "c", "d"];
+// arr.splice(2, 1, "x", "y");
+// console.log(arr);
+
+const Arr = [1,2,3,4,5,6];
+Arr.push(7);
+console.log(Arr);
