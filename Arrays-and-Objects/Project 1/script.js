@@ -1,9 +1,7 @@
-function addtask()
-{
+function addtask() {
     let input = document.getElementById("taskinput").value.trim();
 
-    if(input !== "")
-    {
+    if (input !== "") {
         let li = document.createElement("li");
         li.textContent = input;
         document.getElementById("tasklist").appendChild(li);
@@ -82,12 +80,12 @@ function addtask()
 // });
 
 // function displayTasks() {
-//     taskList.innerHTML = "";    
+//     taskList.innerHTML = "";
 
 //     task.forEach(function (task) {
-//         const li = document.createElement("li"); 
-//         li.textContent = task; 
+//         const li = document.createElement("li");
+//         li.textContent = task;
 //         li.classList.add("list-box");
-//         taskList.appendChild(li); 
+//         taskList.appendChild(li);
 //     });
 // }

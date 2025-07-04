@@ -72,7 +72,7 @@ input {
     overflow-y: auto;
     padding: 1rem 2rem;
     justify-content: center;
-    align-items: flex-start;    
+    align-items: flex-start;
 }
 
 #tasklist {
@@ -111,7 +111,6 @@ input {
     scroll-behavior: smooth;
 }
 
-/* 👇 Paste from here */
 .list-container::-webkit-scrollbar {
     width: 8px;
 }
