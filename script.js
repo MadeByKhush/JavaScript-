@@ -156,6 +156,32 @@
 // arr.splice(2, 1, "x", "y");
 // console.log(arr);
 
-const Arr = [1,2,3,4,5,6];
-Arr.push(7);
-console.log(Arr);
+// const Arr = [1,2,3,4,5,6];
+// Arr.push(7);
+// console.log(Arr);
+
+// let arr = [12,20,52,64,37,49]
+// arr.forEach( (n,i,arr) => 
+// {
+//     console.log(n,i,arr);
+// } )
+
+// let arr = [10,20,30,40,50,60,70];
+// let above30 = arr.filter(num => num>30);
+// console.log(above30);
+
+// let number = [1,2,3]
+// const doubled = number.map(num => num*2);
+// console.log(doubled);
+
+// let num = [1,2,3,4,5,6,7,8,9,10];
+// let even = num.filter(n => n % 2 === 0);
+// console.log("Even Numbers:", even);
+
+const fruits = ["Apple", "Banana", "Mango", "Orange", "Pineapple"];
+
+console.log("Fruits List:");
+fruits.forEach((fruits, index) => {
+  console.log(`${index + 1}. ${fruits}`);
+}); 
+
