@@ -178,10 +178,15 @@
 // let even = num.filter(n => n % 2 === 0);
 // console.log("Even Numbers:", even);
 
-const fruits = ["Apple", "Banana", "Mango", "Orange", "Pineapple"];
+// const fruits = ["Apple", "Banana", "Mango", "Orange", "Pineapple"];
 
-console.log("Fruits List:");
-fruits.forEach((fruits, index) => {
-  console.log(`${index + 1}. ${fruits}`);
-}); 
+// console.log("Fruits List:");
+// fruits.forEach((fruits, index) => {
+//   console.log(`${index + 1}. ${fruits}`);
+// }); 
 
+
+    let input = "Apple, Banana, Mango, Orange, Pineapple";
+    let filterList = input.split(",").trim();
+    console.log(filterList);
+    
