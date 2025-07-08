@@ -264,3 +264,33 @@ console.log(totalPrice); // Print the total sum of prices
 
 // Show the final state of the cart after all operations
 console.log(cart);
+
+
+
+//declaration of objects  OR create a object
+const car =
+{
+    brand: "Toyota",
+    model: "fortuner",
+    year: 2022
+};
+
+//access values
+console.log(car.brand); //dot notation
+console.log(car["model"]); //bracket notation
+
+//update values
+car.year = 2025;
+
+//add new property
+car.color = "White";
+car.power = "4 by 4";
+
+//delete a property
+delete car.power;
+
+for (let key in car) {
+  console.log(key, "=>", car[key]);
+}
+
+console.log(car);
