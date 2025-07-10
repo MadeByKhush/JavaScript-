@@ -38,7 +38,14 @@ body {
     border-radius: 1rem;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
 
+#btn:hover {
+    background-color: #343434;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 span {
