@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    height: 100vh;
+    width: auto;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: auto;
+    width: auto;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.195);
+    padding: 3rem;
+    border-radius: 5rem;
+    border: 1px solid rgba(255, 255, 255, 0.285);
+    box-shadow: 10px 10px 264px 15px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 10px 10px 264px 15px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 10px 10px 264px 15px rgba(0, 0, 0, 0.45);
+    ;
+}
+
+span,
+h2 {
+    font-size: 2rem;
+}
+
+#increase,
+#decrease {
+    height: 2rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    margin-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+#increase:hover,
+#decrease:hover {
+    background-color: ;
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 50s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
