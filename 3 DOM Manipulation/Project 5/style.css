@@ -1,76 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
+/* Reset & Base Setup */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
 }
 
+/* Full Page Setup */
 body {
-    height: 100vh;
-    width: auto;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  height: 100vh;
+  width: 100%; /* changed from auto to 100% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 50s ease infinite;
 }
 
+/* Container Box */
 .container {
-    height: auto;
-    width: auto;
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.195);
-    padding: 3rem;
-    border-radius: 5rem;
-    border: 1px solid rgba(255, 255, 255, 0.285);
-    box-shadow: 10px 10px 264px 15px rgba(0, 0, 0, 0.45);
-    -webkit-box-shadow: 10px 10px 264px 15px rgba(0, 0, 0, 0.45);
-    -moz-box-shadow: 10px 10px 264px 15px rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  padding: 3rem;
+  border-radius: 5rem;
+  background-color: rgba(255, 255, 255, 0.195);
+  border: 1px solid rgba(255, 255, 255, 0.285);
+  box-shadow: 10px 10px 264px 15px rgba(0, 0, 0, 0.45);
 }
 
+/* Text inside container */
 span,
 h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
+/* Buttons */
 #increase,
 #decrease {
-    height: 2rem;
-    width: 8rem;
-    border-radius: 2rem;
-    border: 1px solid black;
-    margin-top: 2rem;
-    font-size: 1rem;
-    text-align: center;
-    cursor: pointer;
+  height: 2rem;
+  width: 8rem;
+  border-radius: 2rem;
+  border: 1px solid black;
+  margin-top: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+/* Fix: Hover background was empty */
+#increase:hover {
+  background-color: rgba(76, 175, 80, 0.2); /* light green */
+}
 
-#increase:hover,
 #decrease:hover {
-    background-color: ;
+  background-color: rgba(244, 67, 54, 0.2); /* light red */
 }
 
-body {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 50s ease infinite;
-    height: 100vh;
-}
-
+/* Animated Background */
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
 
-    50% {
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-        background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
+  }
 }
