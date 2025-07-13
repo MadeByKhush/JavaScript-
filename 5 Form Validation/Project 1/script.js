@@ -7,7 +7,7 @@ btn.addEventListener("click", function () {
     let password = document.getElementById("pass").value.trim();
     let cpass = document.getElementById("confirm-pass").value.trim();
 
-    
+
     //using multiple if because har condition ko independently check karna chahte hain
     // ✅ All fields empty case
     if (name === "" && mail === "" && number === "" && password === "" && cpass === "") {
@@ -54,4 +54,4 @@ btn.addEventListener("click", function () {
     // ✅ All good
     alert("Form submitted successfully!");
     return true;
-});
+}); 
