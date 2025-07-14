@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2edc6d, #0099ff);
+}
+
+h1
+{
+    font-size: 6rem;
+}
+h2
+{
+    margin-top: 10rem;
+    font-size: 3rem;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+input {
+    height: 2.5rem;
+    width: 25rem;
+    border: 1px solid rgba(0, 0, 0, 0.245);
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+
+button {
+    height: 2.9rem;
+    width: 6.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.289);
+    border-radius: 1.9rem;
+    cursor: pointer;
+}
