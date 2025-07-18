@@ -44,12 +44,6 @@ This isn’t just a course-following repo — it’s my own step-by-step logic-b
 
 ---
 
-## 🔗 Live Repository
-
-👉 [GitHub Repo: JavaScript-](https://github.com/MadeByKhush/JavaScript-)
-
----
-
 ## 🙌 Why This Repo Matters
 
 I didn’t just watch tutorials — I implemented, made mistakes, debugged, and **built things on my own**.  
