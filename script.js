@@ -191,106 +191,138 @@
 // console.log(filterList);
 
 
-let cart = [
-    { id: 1, name: "Shoes", price: 1200 },
-    { id: 2, name: "T-shirt", price: 800 },
-    { id: 3, name: "Jeans", price: 1500 },
-    { id: 4, name: "Books", price: 500 },
-    { id: 5, name: "Paintings", price: 700 },
-    { id: 6, name: "Speakers", price: 600 },
-];
+// let cart = [
+//     { id: 1, name: "Shoes", price: 1200 },
+//     { id: 2, name: "T-shirt", price: 800 },
+//     { id: 3, name: "Jeans", price: 1500 },
+//     { id: 4, name: "Books", price: 500 },
+//     { id: 5, name: "Paintings", price: 700 },
+//     { id: 6, name: "Speakers", price: 600 },
+// ];
 
-// ----------- practicing Array Methods -----------
+// // ----------- practicing Array Methods -----------
 
-// Add a new item to the end of the cart array
-cart.push({ id: 4, name: "Watch", price: 1000 }); 
+// // Add a new item to the end of the cart array
+// cart.push({ id: 4, name: "Watch", price: 1000 }); 
 
-// Remove the last item from the cart (i.e., "Watch")
-cart.pop();
+// // Remove the last item from the cart (i.e., "Watch")
+// cart.pop();
 
-// Remove the first item from the cart (i.e., "Shoes")
-cart.shift();
+// // Remove the first item from the cart (i.e., "Shoes")
+// cart.shift();
 
-// Add a new item at the beginning of the cart
-cart.unshift({ id: 1, name: "Phone", price: 3200 });
+// // Add a new item at the beginning of the cart
+// cart.unshift({ id: 1, name: "Phone", price: 3200 });
 
-// Print the total number of items currently in the cart
-console.log(`Total item counts ${cart.length}`);
+// // Print the total number of items currently in the cart
+// console.log(`Total item counts ${cart.length}`);
 
-// Create a new array by slicing from index 1 to the end (non-destructive)
-let sliceCart = cart.slice(1);
-console.log(sliceCart); // Display the sliced array
+// // Create a new array by slicing from index 1 to the end (non-destructive)
+// let sliceCart = cart.slice(1);
+// console.log(sliceCart); // Display the sliced array
 
-// Replace 1 item at index 3 with a new item (modifies original array)
-let spliceCart = cart.splice(3, 1, { id: 4, name: "Socks", price: 200 });
-console.log(spliceCart); // Show the item that was removed
+// // Replace 1 item at index 3 with a new item (modifies original array)
+// let spliceCart = cart.splice(3, 1, { id: 4, name: "Socks", price: 200 });
+// console.log(spliceCart); // Show the item that was removed
 
-// Loop through each item in the cart and print its name
-cart.forEach(function (item) {
-    console.log(`name ${item.name}`);
-});
+// // Loop through each item in the cart and print its name
+// cart.forEach(function (item) {
+//     console.log(`name ${item.name}`);
+// });
 
-// Filter items with price greater than 1000
-let aboveFilter = cart.filter(function (item) {
-    return item.price > 1000;
-});
-console.log(aboveFilter); // Display the filtered list (price > 1000)
+// // Filter items with price greater than 1000
+// let aboveFilter = cart.filter(function (item) {
+//     return item.price > 1000;
+// });
+// console.log(aboveFilter); // Display the filtered list (price > 1000)
 
-// Create a new array of just item names using map
-let itemnames = cart.map(function (item) {
-    return item.name;
-});
-console.log(itemnames); // Print the names of all items
+// // Create a new array of just item names using map
+// let itemnames = cart.map(function (item) {
+//     return item.name;
+// });
+// console.log(itemnames); // Print the names of all items
 
-// Find the first item whose name is exactly "Speakers"
-let speaker = cart.find(function (item) {
-    return item.name === "Speakers";
-});
-console.log(speaker); // Print the item object if found
+// // Find the first item whose name is exactly "Speakers"
+// let speaker = cart.find(function (item) {
+//     return item.name === "Speakers";
+// });
+// console.log(speaker); // Print the item object if found
 
-// Check if the brand "Nike" exists in the brands array
-let brands = ["Nike", "Puma", "Adidas"];
-console.log(brands.includes("Nike")); // true if "Nike" is present
+// // Check if the brand "Nike" exists in the brands array
+// let brands = ["Nike", "Puma", "Adidas"];
+// console.log(brands.includes("Nike")); // true if "Nike" is present
 
-// Join all item names into a single comma-separated string
-let joinedNames = itemnames.join(", ");
-console.log("Items:", joinedNames); // Print the combined string
+// // Join all item names into a single comma-separated string
+// let joinedNames = itemnames.join(", ");
+// console.log("Items:", joinedNames); // Print the combined string
 
-// Calculate the total price of all items in the cart using reduce
-let totalPrice = cart.reduce(function (acc, item) {
-    return acc + item.price;
-}, 0);
-console.log(totalPrice); // Print the total sum of prices
+// // Calculate the total price of all items in the cart using reduce
+// let totalPrice = cart.reduce(function (acc, item) {
+//     return acc + item.price;
+// }, 0);
+// console.log(totalPrice); // Print the total sum of prices
 
-// Show the final state of the cart after all operations
-console.log(cart);
+// // Show the final state of the cart after all operations
+// console.log(cart);
 
 
 
-//declaration of objects  OR create a object
-const car =
-{
-    brand: "Toyota",
-    model: "fortuner",
-    year: 2022
-};
+// //declaration of objects  OR create a object
+// const car =
+// {
+//     brand: "Toyota",
+//     model: "fortuner",
+//     year: 2022
+// };
 
-//access values
-console.log(car.brand); //dot notation
-console.log(car["model"]); //bracket notation
+// //access values
+// console.log(car.brand); //dot notation
+// console.log(car["model"]); //bracket notation
 
-//update values
-car.year = 2025;
+// //update values
+// car.year = 2025;
 
-//add new property
-car.color = "White";
-car.power = "4 by 4";
+// //add new property
+// car.color = "White";
+// car.power = "4 by 4";
 
-//delete a property
-delete car.power;
+// //delete a property
+// delete car.power;
 
-for (let key in car) {
-  console.log(key, "=>", car[key]);
+// for (let key in car) {
+//   console.log(key, "=>", car[key]);
+// }
+
+// console.log(car);
+
+
+
+
+//Object Rivision 'Simple Object'--
+
+// let person = {
+//     "name" : "Khush",
+//     "age" : 21,
+//     "course" : "BCA",
+//     "city" : "jodhpur"
+// }
+
+// console.log(person); //acccess the complete object
+// console.log(person["name"]);//access using braket notation
+// console.log(person.age);//access using Dot notation
+// console.log(person.course);
+// console.log(person.city);
+
+//Object Rivision 'Nested Object'--
+let student = {
+    "name" : "Khush",
+    "age" : 21,
+    "course" : "BCA",
+    "address" : {
+        "streat" : "7/795 K.B.H.B",
+        "city" : "Jodhpur",
+        "landmark" : "Near Shiv Temple"
+    }
 }
 
-console.log(car);
+console.log(student.address.city)
